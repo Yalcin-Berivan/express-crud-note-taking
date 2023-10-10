@@ -45,23 +45,6 @@ app.put('/notes/:id',async(req,res)=>{
     await NoteModel.findOneAndUpdate({_id:id},body)
     res.send(body);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const port=3000;
 app.listen(port,()=>{
     console.log(`Sunucu ${port} portunda başlatıldı`);
